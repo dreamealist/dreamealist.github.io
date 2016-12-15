@@ -1,1 +1,284 @@
-Hellow World
+<html>
+    <head>
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Roboto:300,400,900" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <style>
+html, body {
+  width: 100%;
+  background: #f8f8f5;
+}
+
+.title {
+  margin-top:15px;
+}
+h2 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 36px;
+  background: #f8f8f5;
+  color: #2C1F20;
+  padding: 36px 0 100px 20%;
+  margin-bottom: 0px;
+  line-height: 90%;
+}
+
+h3 {
+    font-family: 'Cabin Sketch', cursive;
+  font-size: 36px;
+  background: #f8f8f5;
+  color: #2C1F20;
+  padding: 36px 0 100px 20%;
+   margin: auto;
+    width: 50%;
+}
+
+h4 {
+  font-family: 'Roboto', cursive;
+  font-size: 24px;
+  background: #f8f8f5;
+  color: #2C1F20;
+  margin: auto;
+    width: 50%;
+}
+
+label {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+}
+
+p, a, div {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+}
+
+.tab-wrap {
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0px;
+}
+
+input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1;
+}
+input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+  color: white;
+}
+input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
+  display: block;
+}
+input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {
+  left: calc((100% / 5) * 0);
+}
+input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {
+  left: calc((100% / 5) * 1);
+}
+input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {
+  left: calc((100% / 5) * 2);
+
+}
+input[type="radio"][name="tabs"]:nth-of-type(4):checked ~ .slide {
+  left: calc((100% / 5) * 3);
+}
+input[type="radio"][name="tabs"]:nth-of-type(5):checked ~ .slide {
+  left: calc((100% / 5) * 4);
+}
+input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+  left: 0;
+}
+
+label {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #2C1F20;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 56px;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  width: 100%;
+}
+
+
+
+
+.slide {
+  background: #ffeb3b;
+  width: calc(100% / 5);
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 4px);
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+
+.tab-label-content {
+  width: 100%;
+}
+.tab-label-content .tab-content {
+  position: absolute;
+  top: 100px;
+  left: 16px;
+  line-height: 130%;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    padding: 40px 0 90px 10%;
+  }
+
+  .tab-wrap {
+    width: 100%;
+    margin-left: 10%;
+    top: -106px;
+  }
+}
+
+ .button1 {
+    background-color: #63E3BB; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+        font-weight:bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 3px 3px;
+    color: black; 
+    border: 0px solid #4CAF50;
+    border-radius: 10px;
+     width: 140px;
+}
+
+.button1:hover {
+    background-color: #63E3BB;
+    color: #fffb7e;
+}
+
+    </style>
+    
+</head>
+ <center><img class="title" src="title.jpg" width="55%"></center>
+    <body>
+<!--<h1>Map As Media - Final Atlas</h1>-->
+
+
+<div class="tab-wrap">
+  
+    <input type="radio" name="tabs" id="tab1" checked>
+    <div class="tab-label-content" id="tab1-content">
+      <label for="tab1">Mapping x Walk</label>
+      <div class="tab-content"> 
+<h3> On Fifth Avenue <br><br>
+  <div class="button1">Mapping Memory</div>
+  <div class="button1">Mapping Emotion</div>
+</h3>
+        
+<p><img src="sketch1.png" width="50%"><img src="sketch2.png" width="50%">
+<iframe src="https://player.vimeo.com/video/195689142?color=FA91B8" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/195689142">fifthave</a> from <a href="https://vimeo.com/user4783224">kangjiyeon</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+     <img src="Prototype1/sketch.png" width="90%">
+     <img src="Prototype1/sketch1.png" width="90%">
+      </div>
+    </div>
+    
+    <input type="radio" name="tabs" id="tab2">
+    <div class="tab-label-content" id="tab2-content">
+      <label for="tab2">Mapping Time</label>
+
+      <div class="tab-content">  
+  
+        <h2>Wearable Self, Wearable Data<br><br><font color="#cfa1eb">The Quantified Self x Fashion</font><br><br><br><br>
+
+        <div class="button1">Mapping Time</div>
+        <div class="button1">Quantified Self</div>
+        <div class="button1">Fashion Design</div>
+        </h2>
+        <center><img src="2_WearableSelf/title.jpg"  width="99%"></center> <br>
+         <center><img src="2_WearableSelf/iphone.png"  width="90%"></center> <br>
+        <center><img src="2_WearableSelf/data1.jpg"  width="60%"></center> <br>
+         <iframe src="https://player.vimeo.com/video/195671815?color=FA91B8" width="900" height="550" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+       <p> “Wearable Self, Wearable Data” is a data-driven design project to create customizable textile design and fashion items generated by self-data, which is an attempt to make quantified self-data more meaningful and memorable for individuals. A traditional medium that represents our self-identity was fashion, which often called as our second skin, and now in the age of big data, our quantified, digitized self-data forms a new part of our identities — we all unconsciously gather data from the sensors on our smartphone and wearable devices. However, in many cases, those numbers and graphs from wearable devices fails to make a meaningful connection with us. In this context, “Wearable Self” attempts to turn the fragmented data that belongs to us into art which we can more empathize and appreciate. Making self-data tangible and wearable has a unique possibility of personalization and customization in terms of fashion design. Life is a full of moments and patterns and everyone is creating each unique patterns in life. By turning those aggregated numbers into personalized fashion items which we can wear and own, I believe the meaningless data flow can be mementos that help us commemorate moments in our life.
+        </p>
+         <img src="2_WearableSelf/month.png" width="95%"<br>
+          <img src="2_WearableSelf/pattern.png" width="99%">
+          <img src="2_WearableSelf/final_necklace.jpg" width="50%">
+           <img src="2_WearableSelf/final_textile.jpg" width="45%">
+          ><br><br><br><br><br>
+           <img src="2_WearableSelf/patterns.jpg" width="95%"><br><br><br><br><br>
+           
+          <img src="2_WearableSelf/patterns_summary.jpg" width="95%">
+          <img src="nychina.png" width="99%">
+          <img src="2_WearableSelf/process.jpg"  width="95%">
+         <img src="2_WearableSelf/process2.png"  width="95%">
+         <center><img src="2_WearableSelf/title2.png"  width="99%"></center> <br>
+      </div>
+    </div>
+    
+    <input type="radio" name="tabs" id="tab3">
+    <div class="tab-label-content" id="tab3-content">
+      <label for="tab3">Deep Mapping</label>
+      <div class="tab-content">
+            <h2>Deep Mapping<br><font color="#cfa1eb"><br></font></h2>
+        <h1>  A Year of Instagram Photo, and Mood Log.</h4>
+            <img src="instaanalysis.png" width="99%">
+            <img src="prototype3/1.png" width="99%">
+            <img src="prototype3/1.png" width="99%">
+            <img src="prototype3/1.png" width="99%">
+            <img src="prototype3/1.png" width="99%">
+<iframe width="900" height="515" src="https://www.youtube.com/embed/JImzs6zVOUE" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  
+     <input type="radio" name="tabs" id="tab4">
+     <div class="tab-label-content" id="tab4-content">
+      <label for="tab4">Participatory Mapping</label>
+      <div class="tab-content">
+          <h2>Participaroty Mapping<br><font color="#cfa1eb">Where Are You From?</font></h2><br><br><br><br>
+      <img src="Prototype4/participatorymap.jpg" width="43%"><img src="Prototype4/participatorymap4.png" width="57%">
+      
+      <center><img src="Prototype4/participatorymap5.png" width="80%">
+      <img src="Prototype4/1.png" width="80%">
+        <img src="Prototype4/2.png" width="80%">
+          <img src="Prototype4/3.jpg"width="80%">
+            <img src="Prototype4/4.png"width="80%">
+</center>
+     </div>
+   
+   
+    </div>
+
+     <input type="radio" name="tabs" id="tab5">
+     <div class="tab-label-content" id="tab4-content">
+      <label for="tab5">Mapping Arts</label>
+      <div class="tab-content"> <img src="Prototype5/mapphoto.jpg" height="120%">
+      <img src="Prototype5/mapphoto2.png" height="120%"> <img src="Prototype5/mapphoto3.png" height="120%"></div>
+     
+    </div>
+    
+    <div class="slide"></div>
+  
+</div>
+
+
+</body>
+    </html>
